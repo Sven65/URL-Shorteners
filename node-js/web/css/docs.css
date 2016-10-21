@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+*{
+	font-family: "Open Sans";
+    font-weight: 400;
+}
+
+body{
+	font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.h3, h3{
+    font-size: 24px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.section-header a:hover{
+    text-decoration: none;
+    border-bottom: 1px dotted silver;
+}
+
+.section-header a{
+    cursor: pointer;
+    color: #333;
+}
+
+ul.paths{
+    list-style-type: none;
+    padding: 0;
+}
+
+[collapse-when]{
+    height: auto;
+    overflow-y: hidden;
+    transition: height ease-out .2s;
+}
+
+ol, ul{
+    margin-bottom: 10px;
+}
+
+
+dl, ol, ul{
+    margin-top: 0;
+}
+
+li.path{
+    list-style-type: none;
+    padding-bottom: 1.2em;
+    margin-left: 14px;
+}
+
+li.path>header{
+    position: relative;
+    cursor: pointer;
+}
+
+li.path>header h2{
+    font-weight: 400;
+    font-family: Source Code Pro;
+    font-size: 1.2em;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+li.path>header h2 a{
+    color: #333;
+    text-decoration: none;
+}
+
+.preview-wrapper .preview-wrapper{
+	overflow: auto;
+	margin: .5em 1em;
+}
+
+ul.operations{
+	font-size: 1pc;
+    list-style-type: none;
+    padding: 0;
+}
+
+li.operation.get{
+    border: 1px solid #2392f7;
+    background-color: #fff;
+}
+
+li.operation{
+    font-family: "Open Sans";
+    font-weight: 400;
+    list-style-type: none;
+    margin: .4em 0 1em 1em;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid #949493;
+    background-color: #fff;
+}
+
+li.operation.get>header{
+    background-color: rgba(35,146,247,.1);
+}
+
+li.operation>header {
+    overflow: hidden;
+    cursor: pointer;
+    display: table;
+    width: 100%;
+    min-height: 31px;
+}
+
+li.operation.get .http-method{
+    background-color: #2392f7;
+    color: #fff;
+}
+
+li.operation>header .http-method{
+    font-family: 'Source Code Pro';
+    font-size: 1pc;
+    padding: .5em;
+    display: table-cell;
+    float: left;
+    border-top-left-radius: 1px;
+    margin-right: .4em;
+    min-width: 68px;
+    text-align: center;
+}
+
+li.operation .http-method{
+    background-color: #949493;
+    color: #fff;
+}
+
+li.operation .content>section{
+    margin: 1em;
+    font-family: "Open Sans";
+    font-size: .9em;
+}
+
+li.operation .content>section>h4{
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+li.operation.get h4{
+    color: #2392f7;
+}
+
+li.operation h4{
+    color: #949493;
+}
+
+li.operation .content>section>div{
+    margin: .3em 0 .5em;
+    line-height: 120%;
+}
+
+[marked]{
+    color: #333;
+    overflow: hidden;
+    font-family: "Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;
+    font-size: 1pc;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+[marked] :last-child{
+    margin-bottom: 0!important;
+}
+
+[marked] :first-child{
+    margin-top: 0!important;
+}
+
+[marked] code{
+    padding: .2em 0;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,.04);
+    border-radius: 3px;
+}
+
+code{
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+li.operation table.params, li.operation table.respns, li.operation table.security{
+    width: 100%;
+}
+
+pre code, table{
+    background-color: transparent;
+}
+
+[marked] table, table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li.operation table.params>thead>tr>th, li.operation table.respns>thead>tr>th, li.operation table.security>thead>tr>th{
+    padding: .3em;
+    font-weight: 600;
+    background-color: #f7f7f7;
+}
+
+caption, th{
+    text-align: left;
+}
+
+td, th{
+    padding: 0;
+}
+
+a{
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+li.operation table.params>tbody>tr>td span.resp-code.green, li.operation table.respns>tbody>tr>td span.resp-code.green, li.operation table.security>tbody>tr>td span.resp-code.green{
+    color: #13c20f;
+    font-size: 1pc;
+    border-radius: 3px;
+    padding: 3px 0;
+    letter-spacing: .5px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+li.operation.post{
+    border: 1px solid #13c20f;
+    background-color: #fff;
+}
+
+li.operation.post>header{
+    background-color: rgba(19,194,15,.1);
+}
+
+li.operation.post h4{
+    color: #13c20f;
+}
+
+li.operation.post .http-method{
+    background-color: #13c20f;
+    color: #fff;
+}
+
+.json-schema-view, json-schema-view{
+    font-family: monospace;
+    font-size: 0;
+    display: table-cell;
+}
+
+.json-schema-view>*, json-schema-view>*{
+    font-size: 14px;
+}
+
+.json-schema-view .title, .json-schema-view .title:hover, json-schema-view .title, json-schema-view .title:hover{
+    text-decoration: none;
+    color: #333;
+}
+.json-schema-view .title, json-schema-view .title{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.json-schema-view .toggle-handle, json-schema-view .toggle-handle{
+    cursor: pointer;
+    margin: auto .3em;
+    font-size: 10px;
+    display: inline-block;
+    -webkit-transform-origin: 50% 40%;
+    transform-origin: 50% 40%;
+    transition: -webkit-transform 150ms ease-in;
+    transition: transform 150ms ease-in;
+}
+
+.json-schema-view .inner, json-schema-view .inner{
+    padding-left: 18px;
+}
+
+.json-schema-view .property, json-schema-view .property{
+    font-size: 0;
+    display: table-row;
+}
+
+.json-schema-view .name, json-schema-view .name{
+    color: #00f;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.json-schema-view .property>*, json-schema-view .property>*{
+    font-size: 14px;
+    padding: .2em;
+}
+
+.json-schema-view .type, json-schema-view .type{
+    color: green;
+}
+
+li.operation table.params>tbody>tr>td, li.operation table.respns>tbody>tr>td, li.operation table.security>tbody>tr>td{
+    padding: .3em;
+}
+
+#docs-front{
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+    padding-top: 17em;
+}
+
+#docs-front a{
+    font-size: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
+}

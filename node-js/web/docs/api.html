@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A NodeJS URL Shortener">
+    <meta name="author" content="Mackan <mackan@discorddungeons.me>">
+    <title>Node-URL Docs</title>
+    <link rel="stylesheet" href="../css/docs.css"> 
+</head>
+
+<body>
+    <div>
+        <div class="preview-wrapper">
+            <div class="info">
+                <header class="info-header">
+                    <h3 class="section-header"><a>Node-URL</a></h3> </header>
+                <div class="info-container section-content">
+                    <div></div>
+                    <h4>Version <span>0.0.1</span></h4> </div>
+            </div>
+            <header>
+                <h3 class="section-header"><a><span>Paths</span></a></h3> 
+            </header>
+            <ul class="paths">
+                <li class="path">
+                    <header>
+                        <h2><a>/api/link/:code</a></h2>
+                    </header>
+                    <ul class="operations">
+                        <li class="get operation">
+                            <header>
+                                <div class="http-method"> GET /api/link/:code </div>
+                            </header>
+                            <div class="content">
+                                <section class="description">
+                                    <h4>Description</h4>
+                                    <div>
+                                        <p>Gets <code>link</code> param from link object</p>
+                                    </div>
+                                </section>
+                                <section class="parameters">
+                                    <h4>Parameters</h4>
+                                    <div>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Located in</th>
+                                                    <th>Description</th>
+                                                    <th>Required</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="mono">code</span></a> </td>
+                                                    <td>query</td>
+                                                    <td>
+                                                        <p>Link Code</p>
+                                                    </td>
+                                                    <td>Yes</td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="primitive"> <span class="type"> string</span> <span class="format"> (string)</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                                <section class="responses">
+                                    <h4>Responses</h4>
+                                    <div>
+                                        <table class="respns">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Description</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="resp-code green">200</span></a> </td>
+                                                    <td>
+                                                        <p>Successful response</p>
+                                                    </td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="array">
+                                                                                <a class="title"> <span class="toggle-handle"> </span>Link Object<span class="opening bracket">[</span></a>
+                                                                                <div class="inner">
+                                                                                    <div class="json-schema-view">
+                                                                                        <div class="object">
+                                                                                            <a class="title"> <span class="toggle-handle"> </span>Link <span class="opening brace">{</span></a>
+                                                                                            <div class="inner">
+                                                                                                <div class="property"> <span class="name"> status:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="property"> <span class="name"> link:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> string</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div><span class="closing brace">}</span> </div>
+                                                                                    </div>
+                                                                                </div><span class="closing bracket">]</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="path">
+                    <header>
+                        <h2><a>/api/id/:code</a></h2> </header>
+                    <ul class="operations">
+                        <li class="get operation">
+                            <header>
+                                <div class="http-method"> GET /api/id/:code </div>
+                            </header>
+                            <div class="content">
+                                <div class="tags"></div>
+                                <section class="description">
+                                    <h4>Description</h4>
+                                    <div>
+                                        <p>Gets <code>id</code> param from link object</p>
+                                    </div>
+                                </section>
+                                <section class="parameters">
+                                    <h4>Parameters</h4>
+                                    <div>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Located in</th>
+                                                    <th>Description</th>
+                                                    <th>Required</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="mono">code</span></a> </td>
+                                                    <td>query</td>
+                                                    <td>
+                                                        <p>Link Code</p>
+                                                    </td>
+                                                    <td>Yes</td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="primitive"> <span class="type"> string</span> <span class="format"> (string)</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                                <section class="responses">
+                                    <h4>Responses</h4>
+                                    <div>
+                                        <table class="respns">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Description</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="resp-code green">200</span></a> </td>
+                                                    <td>
+                                                        <p>Successful response</p>
+                                                    </td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="array">
+                                                                                <a class="title"> <span class="toggle-handle"> </span>Link Object<span class="opening bracket">[</span></a>
+                                                                                <div class="inner">
+                                                                                    <div class="json-schema-view">
+                                                                                        <div class="object">
+                                                                                            <a class="title"> <span class="toggle-handle"> </span>Link <span class="opening brace">{</span></a>
+                                                                                            <div class="inner">
+                                                                                                <div class="property"> <span class="name"> status:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="property"> <span class="name"> id:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div><span class="closing brace">}</span> </div>
+                                                                                    </div>
+                                                                                </div><span class="closing bracket">]</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                        </li>
+                    </ul>
+                </li>
+                <li class="path">
+                    <header>
+                        <h2><a>/api/created/:code</a></h2> </header>
+                    <ul class="operations">
+                        <li class="get operation">
+                            <header>
+                                <div class="http-method"> GET /api/created/:code </div>
+                            </header>
+                            <div class="content">
+                                <div class="tags"></div>
+                                <section class="description">
+                                    <h4>Description</h4>
+                                    <div>
+                                        <p>Gets <code>created</code> param from link object</p>
+                                    </div>
+                                </section>
+                                <section class="parameters">
+                                    <h4>Parameters</h4>
+                                    <div>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Located in</th>
+                                                    <th>Description</th>
+                                                    <th>Required</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="mono">code</span></a> </td>
+                                                    <td>query</td>
+                                                    <td>
+                                                        <p>Link Code</p>
+                                                    </td>
+                                                    <td>Yes</td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="primitive"> <span class="type"> string</span> <span class="format"> (string)</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                                <section class="responses">
+                                    <h4>Responses</h4>
+                                    <div>
+                                        <table class="respns">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Description</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="resp-code green">200</span></a> </td>
+                                                    <td>
+                                                        <p>Successful response</p>
+                                                    </td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="array">
+                                                                                <a class="title"> <span class="toggle-handle"> </span>Link Object<span class="opening bracket">[</span></a>
+                                                                                <div class="inner">
+                                                                                    <div class="json-schema-view">
+                                                                                        <div class="object">
+                                                                                            <a class="title"> <span class="toggle-handle"> </span>Link <span class="opening brace">{</span></a>
+                                                                                            <div class="inner">
+                                                                                                <div class="property"> <span class="name"> status:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="property"> <span class="name"> created:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div><span class="closing brace">}</span> </div>
+                                                                                    </div>
+                                                                                </div><span class="closing bracket">]</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="path">
+                    <header>
+                        <h2><a>/api/clicks/:code</a></h2> </header>
+                    <ul class="operations">
+                        <li class="get operation">
+                            <header>
+                                <div class="http-method"> GET /api/clicks/:code </div>
+                            </header>
+                            <div class="content">
+                                <div class="tags"></div>
+                                <section class="description">
+                                    <h4>Description</h4>
+                                    <div>
+                                        <p>Gets <code>clicks</code> param from link object</p>
+                                    </div>
+                                </section>
+                                <section class="parameters">
+                                    <h4>Parameters</h4>
+                                    <div>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Located in</th>
+                                                    <th>Description</th>
+                                                    <th>Required</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="mono">code</span></a> </td>
+                                                    <td>query</td>
+                                                    <td>
+                                                        <p>Link Coode</p>
+                                                    </td>
+                                                    <td>Yes</td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="primitive"> <span class="type"> string</span> <span class="format"> (string)</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                                <section class="responses">
+                                    <h4>Responses</h4>
+                                    <div>
+                                        <table class="respns">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Description</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> <a><span class="resp-code green">200</span></a> </td>
+                                                    <td>
+                                                        <p>Successful response</p>
+                                                    </td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="array">
+                                                                                <a class="title"> <span class="toggle-handle"> </span>Link Object<span class="opening bracket">[</span></a>
+                                                                                <div class="inner">
+                                                                                    <div class="json-schema-view">
+                                                                                        <div class="object">
+                                                                                            <a class="title"> <span class="toggle-handle"> </span>Link <span class="opening brace">{</span></a>
+                                                                                            <div class="inner">
+                                                                                                <div class="property"> <span class="name"> status:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="property"> <span class="name"> clicks:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type"> integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div><span class="closing brace">}</span> </div>
+                                                                                    </div>
+                                                                                </div><span class="closing bracket">]</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="path">
+                    <header>
+                        <h2><a>/api/create</a></h2> </header>
+                    <ul class="operations">
+                        <li class="post operation">
+                            <header>
+                                <div class="http-method">POST /api/create</div>
+                            </header>
+                            <div class="content">
+                                <div class="tags"></div>
+                                <section class="description">
+                                    <h4>Description</h4>
+                                    <div marked="operation.description">
+                                        <p>Create a link</p>
+                                    </div>
+                                </section>
+                                <section class="parameters">
+                                    <h4>Parameters</h4>
+                                    <div>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Located in</th>
+                                                    <th>Description</th>
+                                                    <th>Required</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a><span class="mono">url</span></a></td>
+                                                    <td>query</td>
+                                                    <td marked="parameter.description">
+                                                        <p>Link To Shorten</p>
+                                                    </td>
+                                                    <td>Yes</td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="primitive"> <span class="type">string</span> <span class="format">(string)</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                                <section class="responses">
+                                    <h4>Responses</h4>
+                                    <div>
+                                        <table class="respns">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Description</th>
+                                                    <th>Schema</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a><span class="resp-code green">200</span></a></td>
+                                                    <td marked="response.description">
+                                                        <p>Successful response</p>
+                                                    </td>
+                                                    <td>
+                                                        <table class="schema-model">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="view">
+                                                                        <div class="json-schema-view">
+                                                                            <div class="array"> <a class="title"><span class="toggle-handle"></span>Link Object<span class="opening bracket">[</span></a>
+                                                                                <div class="inner">
+                                                                                    <div class="json-schema-view">
+                                                                                        <div class="object"> <a class="title"><span class="toggle-handle"></span>Link <span class="opening brace">{</span></a>
+                                                                                            <div class="inner">
+                                                                                                <div class="property"> <span class="name">status:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type">integer</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="property"> <span class="name">link:</span>
+                                                                                                    <div class="json-schema-view">
+                                                                                                        <div class="primitive"> <span class="type">string</span> </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div><span class="closing brace">}</span> </div>
+                                                                                    </div>
+                                                                                </div><span class="closing bracket">]</span> </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+</body>
+
+</html>

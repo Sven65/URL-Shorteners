@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+body{
+	padding-top: 5px;
+	font-family: Helvetica;
+	background-color: #eee;
+}
+
+#wrap{
+	max-width: 70%;
+    margin: auto;
+    height: 100%;
+    margin-top: 15%;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+}
+
+#url{
+    width: 90%;
+}
+
+button{
+    float: right;
+    margin-top: -33px;
+}

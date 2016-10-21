@@ -1,0 +1,13 @@
+.setup{
+  background-color: #222;
+  color: #fff;
+}
+
+.setup > .center{
+  margin: auto;
+  text-align: center;
+}
+
+.setup > form{
+  max-width: 400px;
+}

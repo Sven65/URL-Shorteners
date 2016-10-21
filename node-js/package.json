@@ -1,0 +1,11 @@
+{
+  "name": "Url",
+  "version": "0.0.3",
+  "description": "A url shortener",
+  "author": "Mackan <mackan@discorddungeons.me>",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6"
+  }
+}
