@@ -1,5 +1,5 @@
 /* Golang URL Shortener.
-Copyright (c) Mackan, <thormax5@gmail.com>
+Copyright (c) Mackan, <mackan@discorddungeons.me>
 */
 package main
 
